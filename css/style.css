@@ -255,6 +255,7 @@ nav.show div.icon-close {
 /* === HOME =================================================== */
 #home {
   overflow: hidden;
+  
 }
 
 #home .container {
@@ -263,18 +264,10 @@ nav.show div.icon-close {
 
 #home .image {
   position: relative;
+  width: 25rem;
+  margin-left: 2rem;
 }
 
-#home .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: var(--base-color-second);
-  position: absolute;
-  top: -16.8%;
-  left: 16.7%;
-  z-index: 0;
-}
 
 #home .image img {
   position: relative;
@@ -304,6 +297,10 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
+#home .text .curriculo {
+  margin-left: 0.5rem;
+}
+
 /* === ABOUT =================================================== */
 #about {
   background: #fff;
@@ -314,18 +311,9 @@ nav.show div.icon-close {
 
 #about .image {
   position: relative;
+  width: 25rem;
 }
 
-#about .image::before {
-  content: '';
-  height: 100%;
-  width: 100%;
-  background: var(--base-color-second);
-  position: absolute;
-  top: -8.3%;
-  left: -33%;
-  z-index: 0;
-}
 
 #about .image img {
   position: relative;
@@ -366,36 +354,36 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
-/* === TESTIMONIALS  =================================================== */
-#testimonials {
+/* === project  =================================================== */
+#project {
   background: #fff;
 }
 
-#testimonials .container {
+#project .container {
   margin-left: 0;
   margin-right: 0;
 }
 
-#testimonials header {
+#project header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 0;
 }
 
-#testimonials blockquote {
+#project blockquote {
   padding: 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
 }
 
-#testimonials blockquote p {
+#project blockquote p {
   position: relative;
   text-indent: var(--title-font-size);
   margin-bottom: 1.5rem;
   color: var(--title-color);
 }
 
-#testimonials blockquote p span {
+#project blockquote p span {
   font: 700 2.5rem serif;
 
   position: absolute;
@@ -404,13 +392,13 @@ nav.show div.icon-close {
   color: var(--base-color);
 }
 
-#testimonials cite {
+#project cite {
   display: flex;
   align-items: center;
   font-style: normal;
 }
 
-#testimonials cite img {
+#project cite img {
   width: 2rem;
   height: 2rem;
   object-fit: cover;

@@ -1,3 +1,4 @@
+/*=== abre e fecha o menu clicando no ícone: hamburguer e no X ===*/
 /*=== opens and closes the menu by clicking on the icon: hamburguer and X ===*/
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
@@ -8,8 +9,8 @@ for (const element of toggle) {
   })
 }
 
+/*=== ao clicar em um item de menu, oculte o menu ===*/
 /*=== when clicking on a menu item, hide the menu ===*/
-
 const links = document.querySelectorAll('nav ul li a')
 
 for (const link of links) {
@@ -18,6 +19,8 @@ for (const link of links) {
   })
 }
 
+
+/*=== alterar o cabeçalho da página ao rolar ===*/
 /*=== change page header when scrolling ===*/
 const header = document.querySelector('#header')
 const navHeight = header.offsetHeight
@@ -59,8 +62,8 @@ const scrollReveal = ScrollReveal({
 scrollReveal.reveal(
   `#home .image, #home .text,
   #about .image, #about .text,
-  #services header, #services .card,
-  #testimonials header, #testimonials .testimonials
+  #abiliity header, #abiliity .card,
+  #project header, #project .project
   #contact .text, #contact .links,
   footer .brand, footer .social
   `,
